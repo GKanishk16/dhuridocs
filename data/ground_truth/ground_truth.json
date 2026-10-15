@@ -1,0 +1,2699 @@
+{
+  "seed": 16,
+  "applications": 30,
+  "documents": [
+    {
+      "application_id": "APP-001",
+      "document_type": "invoice",
+      "path": "data/applications/APP-001/invoice.pdf",
+      "noisy_path": "data/applications/APP-001/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1510000,
+        "rto": 151000.0,
+        "insurance": 52850.00000000001,
+        "accessories": 30200.0,
+        "on_road_price": 1744050,
+        "requested_loan_amount": 1482000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-001",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-001/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-001/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "employer": "Example Mobility Services",
+        "gross_pay": 106000,
+        "deductions": 15900,
+        "net_pay": 90100,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-001",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-001/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-001/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "account_id": "SYNTH-AC-0001",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          100100,
+          100100,
+          100100
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-001",
+      "document_type": "insurance",
+      "path": "data/applications/APP-001/insurance.pdf",
+      "noisy_path": "data/applications/APP-001/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0001",
+        "idv": 1621966,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0001"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-001",
+      "document_type": "pan",
+      "path": "data/applications/APP-001/pan.pdf",
+      "noisy_path": "data/applications/APP-001/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "pan_number": "ZZBDE1001Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-002",
+      "document_type": "invoice",
+      "path": "data/applications/APP-002/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1180000,
+        "rto": 118000.0,
+        "insurance": 41300.00000000001,
+        "accessories": 23600.0,
+        "on_road_price": 1362900,
+        "requested_loan_amount": 1158000.0
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-002",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-002/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "employer": "Example Mobility Services",
+        "gross_pay": 71000,
+        "deductions": 10650,
+        "net_pay": 60350,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-002",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-002/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-002/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "account_id": "SYNTH-AC-0002",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          60350,
+          60350,
+          60350
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-002",
+      "document_type": "insurance",
+      "path": "data/applications/APP-002/insurance.pdf",
+      "noisy_path": "data/applications/APP-002/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0002",
+        "idv": 1267497,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0002"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-002",
+      "document_type": "pan",
+      "path": "data/applications/APP-002/pan.pdf",
+      "noisy_path": "data/applications/APP-002/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "pan_number": "ZZCDE1002Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-003",
+      "document_type": "invoice",
+      "path": "data/applications/APP-003/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1670000,
+        "rto": 167000.0,
+        "insurance": 58450.00000000001,
+        "accessories": 33400.0,
+        "on_road_price": 1928850,
+        "requested_loan_amount": 1640000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-003",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-003/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "employer": "Example Mobility Services",
+        "gross_pay": 109000,
+        "deductions": 16350,
+        "net_pay": 92650,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-003",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-003/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "account_id": "SYNTH-AC-0003",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          92650,
+          92650,
+          92650
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-003",
+      "document_type": "insurance",
+      "path": "data/applications/APP-003/insurance.pdf",
+      "noisy_path": "data/applications/APP-003/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0003",
+        "idv": 1793830,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0003"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-003",
+      "document_type": "pan",
+      "path": "data/applications/APP-003/pan.pdf",
+      "noisy_path": "data/applications/APP-003/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "pan_number": "ZZDDE1003Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-004",
+      "document_type": "invoice",
+      "path": "data/applications/APP-004/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Tata Motors",
+        "vehicle_model": "Nexon",
+        "variant": "Fearless",
+        "ex_showroom_price": 920000,
+        "rto": 92000.0,
+        "insurance": 32200.000000000004,
+        "accessories": 18400.0,
+        "on_road_price": 1062600,
+        "requested_loan_amount": 903000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-004",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-004/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "employer": "Example Mobility Services",
+        "gross_pay": 89000,
+        "deductions": 13350,
+        "net_pay": 75650,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-004",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-004/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "account_id": "SYNTH-AC-0004",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          88650,
+          88650,
+          88650
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-004",
+      "document_type": "insurance",
+      "path": "data/applications/APP-004/insurance.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0004",
+        "idv": 988218,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Tata Motors",
+        "vehicle_model": "Nexon",
+        "registration": "XX00ZZ0004"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-004",
+      "document_type": "pan",
+      "path": "data/applications/APP-004/pan.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "pan_number": "ZZEDE1004Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-005",
+      "document_type": "invoice",
+      "path": "data/applications/APP-005/invoice.pdf",
+      "noisy_path": "data/applications/APP-005/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1490000,
+        "rto": 149000.0,
+        "insurance": 52150.00000000001,
+        "accessories": 29800.0,
+        "on_road_price": 1720950,
+        "requested_loan_amount": 1463000.0
+      },
+      "inconsistencies": [
+        "insurance_idv_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-005",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-005/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-005/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "employer": "Example Mobility Services",
+        "gross_pay": 128000,
+        "deductions": 19200,
+        "net_pay": 108800,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-005",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-005/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-005/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "account_id": "SYNTH-AC-0005",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          108800,
+          108800,
+          108800
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-005",
+      "document_type": "insurance",
+      "path": "data/applications/APP-005/insurance.pdf",
+      "noisy_path": "data/applications/APP-005/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0005",
+        "idv": 1239084,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0005"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-005",
+      "document_type": "pan",
+      "path": "data/applications/APP-005/pan.pdf",
+      "noisy_path": "data/applications/APP-005/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Aditi Sandbox",
+        "pan_number": "ZZFDE1005Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-006",
+      "document_type": "invoice",
+      "path": "data/applications/APP-006/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Tata Motors",
+        "vehicle_model": "Nexon",
+        "variant": "Fearless",
+        "ex_showroom_price": 1230000,
+        "rto": 123000.0,
+        "insurance": 43050.00000000001,
+        "accessories": 24600.0,
+        "on_road_price": 1420650,
+        "requested_loan_amount": 1208000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-006",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-006/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "employer": "Example Mobility Services",
+        "gross_pay": 123000,
+        "deductions": 18450,
+        "net_pay": 104550,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-006",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-006/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-006/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "account_id": "SYNTH-AC-0006",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          104550,
+          104550,
+          104550
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-006",
+      "document_type": "insurance",
+      "path": "data/applications/APP-006/insurance.pdf",
+      "noisy_path": "data/applications/APP-006/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0006",
+        "idv": 1321204,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Tata Motors",
+        "vehicle_model": "Nexon",
+        "registration": "XX00ZZ0006"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-006",
+      "document_type": "pan",
+      "path": "data/applications/APP-006/pan.pdf",
+      "noisy_path": "data/applications/APP-006/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "pan_number": "ZZGDE1006Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-007",
+      "document_type": "invoice",
+      "path": "data/applications/APP-007/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1620000,
+        "rto": 162000.0,
+        "insurance": 56700.00000000001,
+        "accessories": 32400.0,
+        "on_road_price": 1871100,
+        "requested_loan_amount": 1590000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch",
+        "expired_insurance"
+      ]
+    },
+    {
+      "application_id": "APP-007",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-007/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "employer": "Example Mobility Services",
+        "gross_pay": 107000,
+        "deductions": 16050,
+        "net_pay": 90950,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-007",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-007/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "account_id": "SYNTH-AC-0007",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          101950,
+          101950,
+          101950
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-007",
+      "document_type": "insurance",
+      "path": "data/applications/APP-007/insurance.pdf",
+      "noisy_path": "data/applications/APP-007/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0007",
+        "idv": 1740123,
+        "start_date": "2026-01-01",
+        "end_date": "2025-06-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0007"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-007",
+      "document_type": "pan",
+      "path": "data/applications/APP-007/pan.pdf",
+      "noisy_path": "data/applications/APP-007/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "pan_number": "ZZHDE1007Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-008",
+      "document_type": "invoice",
+      "path": "data/applications/APP-008/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1560000,
+        "rto": 156000.0,
+        "insurance": 54600.00000000001,
+        "accessories": 31200.0,
+        "on_road_price": 1801800,
+        "requested_loan_amount": 1532000.0
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-008",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-008/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "employer": "Example Mobility Services",
+        "gross_pay": 117000,
+        "deductions": 17550,
+        "net_pay": 99450,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-008",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-008/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "account_id": "SYNTH-AC-0008",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          99450,
+          99450,
+          99450
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-008",
+      "document_type": "insurance",
+      "path": "data/applications/APP-008/insurance.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0008",
+        "idv": 1675674,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0008"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-008",
+      "document_type": "pan",
+      "path": "data/applications/APP-008/pan.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "pan_number": "ZZIDE1008Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-009",
+      "document_type": "invoice",
+      "path": "data/applications/APP-009/invoice.pdf",
+      "noisy_path": "data/applications/APP-009/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1090000,
+        "rto": 109000.0,
+        "insurance": 38150.0,
+        "accessories": 21800.0,
+        "on_road_price": 1258950,
+        "requested_loan_amount": 1070000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-009",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-009/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-009/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "employer": "Example Mobility Services",
+        "gross_pay": 109000,
+        "deductions": 16350,
+        "net_pay": 92650,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-009",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-009/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-009/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Anaya Test",
+        "account_id": "SYNTH-AC-0009",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          92650,
+          92650,
+          92650
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-009",
+      "document_type": "insurance",
+      "path": "data/applications/APP-009/insurance.pdf",
+      "noisy_path": "data/applications/APP-009/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0009",
+        "idv": 1170824,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0009"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-009",
+      "document_type": "pan",
+      "path": "data/applications/APP-009/pan.pdf",
+      "noisy_path": "data/applications/APP-009/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "pan_number": "ZZJDE1009Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-010",
+      "document_type": "invoice",
+      "path": "data/applications/APP-010/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1460000,
+        "rto": 146000.0,
+        "insurance": 51100.00000000001,
+        "accessories": 29200.0,
+        "on_road_price": 1686300,
+        "requested_loan_amount": 1433000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch",
+        "insurance_idv_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-010",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-010/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "employer": "Example Mobility Services",
+        "gross_pay": 132000,
+        "deductions": 19800,
+        "net_pay": 112200,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-010",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-010/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-010/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "account_id": "SYNTH-AC-0010",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          119200,
+          119200,
+          119200
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-010",
+      "document_type": "insurance",
+      "path": "data/applications/APP-010/insurance.pdf",
+      "noisy_path": "data/applications/APP-010/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0010",
+        "idv": 1214136,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0010"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-010",
+      "document_type": "pan",
+      "path": "data/applications/APP-010/pan.pdf",
+      "noisy_path": "data/applications/APP-010/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "pan_number": "ZZKDE1010Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-011",
+      "document_type": "invoice",
+      "path": "data/applications/APP-011/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1480000,
+        "rto": 148000.0,
+        "insurance": 51800.00000000001,
+        "accessories": 29600.0,
+        "on_road_price": 1709400,
+        "requested_loan_amount": 1453000.0
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-011",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-011/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "employer": "Example Mobility Services",
+        "gross_pay": 148000,
+        "deductions": 22200,
+        "net_pay": 125800,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-011",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-011/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "account_id": "SYNTH-AC-0011",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          125800,
+          125800,
+          125800
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-011",
+      "document_type": "insurance",
+      "path": "data/applications/APP-011/insurance.pdf",
+      "noisy_path": "data/applications/APP-011/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0011",
+        "idv": 1589742,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0011"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-011",
+      "document_type": "pan",
+      "path": "data/applications/APP-011/pan.pdf",
+      "noisy_path": "data/applications/APP-011/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "pan_number": "ZZLDE1011Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-012",
+      "document_type": "invoice",
+      "path": "data/applications/APP-012/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1190000,
+        "rto": 119000.0,
+        "insurance": 41650.00000000001,
+        "accessories": 23800.0,
+        "on_road_price": 1374450,
+        "requested_loan_amount": 1168000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-012",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-012/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "employer": "Example Mobility Services",
+        "gross_pay": 121000,
+        "deductions": 18150,
+        "net_pay": 102850,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-012",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-012/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "account_id": "SYNTH-AC-0012",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          102850,
+          102850,
+          102850
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-012",
+      "document_type": "insurance",
+      "path": "data/applications/APP-012/insurance.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0012",
+        "idv": 1278238,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0012"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-012",
+      "document_type": "pan",
+      "path": "data/applications/APP-012/pan.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "pan_number": "ZZMDE1012Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-013",
+      "document_type": "invoice",
+      "path": "data/applications/APP-013/invoice.pdf",
+      "noisy_path": "data/applications/APP-013/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1410000,
+        "rto": 141000.0,
+        "insurance": 49350.00000000001,
+        "accessories": 28200.0,
+        "on_road_price": 1628550,
+        "requested_loan_amount": 1384000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-013",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-013/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-013/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "employer": "Example Mobility Services",
+        "gross_pay": 147000,
+        "deductions": 22050,
+        "net_pay": 124950,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-013",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-013/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-013/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "account_id": "SYNTH-AC-0013",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          133950,
+          133950,
+          133950
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-013",
+      "document_type": "insurance",
+      "path": "data/applications/APP-013/insurance.pdf",
+      "noisy_path": "data/applications/APP-013/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0013",
+        "idv": 1514552,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0013"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-013",
+      "document_type": "pan",
+      "path": "data/applications/APP-013/pan.pdf",
+      "noisy_path": "data/applications/APP-013/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "pan_number": "ZZNDE1013Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-014",
+      "document_type": "invoice",
+      "path": "data/applications/APP-014/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1300000,
+        "rto": 130000.0,
+        "insurance": 45500.00000000001,
+        "accessories": 26000.0,
+        "on_road_price": 1501500,
+        "requested_loan_amount": 1276000.0
+      },
+      "inconsistencies": [
+        "expired_insurance"
+      ]
+    },
+    {
+      "application_id": "APP-014",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-014/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "employer": "Example Mobility Services",
+        "gross_pay": 82000,
+        "deductions": 12300,
+        "net_pay": 69700,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-014",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-014/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-014/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "account_id": "SYNTH-AC-0014",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          69700,
+          69700,
+          69700
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-014",
+      "document_type": "insurance",
+      "path": "data/applications/APP-014/insurance.pdf",
+      "noisy_path": "data/applications/APP-014/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0014",
+        "idv": 1396395,
+        "start_date": "2026-01-01",
+        "end_date": "2025-06-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0014"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-014",
+      "document_type": "pan",
+      "path": "data/applications/APP-014/pan.pdf",
+      "noisy_path": "data/applications/APP-014/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "pan_number": "ZZODE1014Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-015",
+      "document_type": "invoice",
+      "path": "data/applications/APP-015/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Vivaan Dummy",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1210000,
+        "rto": 121000.0,
+        "insurance": 42350.00000000001,
+        "accessories": 24200.0,
+        "on_road_price": 1397550,
+        "requested_loan_amount": 1188000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch",
+        "insurance_idv_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-015",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-015/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Vivaan Dummy",
+        "employer": "Example Mobility Services",
+        "gross_pay": 71000,
+        "deductions": 10650,
+        "net_pay": 60350,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-015",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-015/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "account_id": "SYNTH-AC-0015",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          60350,
+          60350,
+          60350
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-015",
+      "document_type": "insurance",
+      "path": "data/applications/APP-015/insurance.pdf",
+      "noisy_path": "data/applications/APP-015/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Vivaan Dummy",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0015",
+        "idv": 1006236,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0015"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-015",
+      "document_type": "pan",
+      "path": "data/applications/APP-015/pan.pdf",
+      "noisy_path": "data/applications/APP-015/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Vivaan Dummy",
+        "pan_number": "ZZPDE1015Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-016",
+      "document_type": "invoice",
+      "path": "data/applications/APP-016/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1400000,
+        "rto": 140000.0,
+        "insurance": 49000.00000000001,
+        "accessories": 28000.0,
+        "on_road_price": 1617000,
+        "requested_loan_amount": 1374000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-016",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-016/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "employer": "Example Mobility Services",
+        "gross_pay": 89000,
+        "deductions": 13350,
+        "net_pay": 75650,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-016",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-016/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "account_id": "SYNTH-AC-0016",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          87650,
+          87650,
+          87650
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-016",
+      "document_type": "insurance",
+      "path": "data/applications/APP-016/insurance.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0016",
+        "idv": 1503810,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0016"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-016",
+      "document_type": "pan",
+      "path": "data/applications/APP-016/pan.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "pan_number": "ZZQDE1016Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-017",
+      "document_type": "invoice",
+      "path": "data/applications/APP-017/invoice.pdf",
+      "noisy_path": "data/applications/APP-017/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1120000,
+        "rto": 112000.0,
+        "insurance": 39200.00000000001,
+        "accessories": 22400.0,
+        "on_road_price": 1293600,
+        "requested_loan_amount": 1100000.0
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-017",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-017/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-017/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "employer": "Example Mobility Services",
+        "gross_pay": 144000,
+        "deductions": 21600,
+        "net_pay": 122400,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-017",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-017/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-017/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "account_id": "SYNTH-AC-0017",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          122400,
+          122400,
+          122400
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-017",
+      "document_type": "insurance",
+      "path": "data/applications/APP-017/insurance.pdf",
+      "noisy_path": "data/applications/APP-017/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0017",
+        "idv": 1203048,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0017"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-017",
+      "document_type": "pan",
+      "path": "data/applications/APP-017/pan.pdf",
+      "noisy_path": "data/applications/APP-017/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "pan_number": "ZZRDE1017Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-018",
+      "document_type": "invoice",
+      "path": "data/applications/APP-018/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1240000,
+        "rto": 124000.0,
+        "insurance": 43400.00000000001,
+        "accessories": 24800.0,
+        "on_road_price": 1432200,
+        "requested_loan_amount": 1217000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-018",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-018/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "employer": "Example Mobility Services",
+        "gross_pay": 119000,
+        "deductions": 17850,
+        "net_pay": 101150,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-018",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-018/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-018/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "account_id": "SYNTH-AC-0018",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          101150,
+          101150,
+          101150
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-018",
+      "document_type": "insurance",
+      "path": "data/applications/APP-018/insurance.pdf",
+      "noisy_path": "data/applications/APP-018/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0018",
+        "idv": 1331946,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0018"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-018",
+      "document_type": "pan",
+      "path": "data/applications/APP-018/pan.pdf",
+      "noisy_path": "data/applications/APP-018/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "pan_number": "ZZSDE1018Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-019",
+      "document_type": "invoice",
+      "path": "data/applications/APP-019/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1480000,
+        "rto": 148000.0,
+        "insurance": 51800.00000000001,
+        "accessories": 29600.0,
+        "on_road_price": 1709400,
+        "requested_loan_amount": 1453000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-019",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-019/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "employer": "Example Mobility Services",
+        "gross_pay": 103000,
+        "deductions": 15450,
+        "net_pay": 87550,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-019",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-019/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "account_id": "SYNTH-AC-0019",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          94550,
+          94550,
+          94550
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-019",
+      "document_type": "insurance",
+      "path": "data/applications/APP-019/insurance.pdf",
+      "noisy_path": "data/applications/APP-019/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0019",
+        "idv": 1589742,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0019"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-019",
+      "document_type": "pan",
+      "path": "data/applications/APP-019/pan.pdf",
+      "noisy_path": "data/applications/APP-019/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "pan_number": "ZZTDE1019Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-020",
+      "document_type": "invoice",
+      "path": "data/applications/APP-020/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1220000,
+        "rto": 122000.0,
+        "insurance": 42700.00000000001,
+        "accessories": 24400.0,
+        "on_road_price": 1409100,
+        "requested_loan_amount": 1198000.0
+      },
+      "inconsistencies": [
+        "insurance_idv_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-020",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-020/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "employer": "Example Mobility Services",
+        "gross_pay": 134000,
+        "deductions": 20100,
+        "net_pay": 113900,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-020",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-020/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "account_id": "SYNTH-AC-0020",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          113900,
+          113900,
+          113900
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-020",
+      "document_type": "insurance",
+      "path": "data/applications/APP-020/insurance.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0020",
+        "idv": 1014552,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0020"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-020",
+      "document_type": "pan",
+      "path": "data/applications/APP-020/pan.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "pan_number": "ZZUDE1020Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-021",
+      "document_type": "invoice",
+      "path": "data/applications/APP-021/invoice.pdf",
+      "noisy_path": "data/applications/APP-021/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1170000,
+        "rto": 117000.0,
+        "insurance": 40950.00000000001,
+        "accessories": 23400.0,
+        "on_road_price": 1351350,
+        "requested_loan_amount": 1149000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch",
+        "expired_insurance"
+      ]
+    },
+    {
+      "application_id": "APP-021",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-021/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-021/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "employer": "Example Mobility Services",
+        "gross_pay": 84000,
+        "deductions": 12600,
+        "net_pay": 71400,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-021",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-021/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-021/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "account_id": "SYNTH-AC-0021",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          71400,
+          71400,
+          71400
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-021",
+      "document_type": "insurance",
+      "path": "data/applications/APP-021/insurance.pdf",
+      "noisy_path": "data/applications/APP-021/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0021",
+        "idv": 1256756,
+        "start_date": "2026-01-01",
+        "end_date": "2025-06-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0021"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-021",
+      "document_type": "pan",
+      "path": "data/applications/APP-021/pan.pdf",
+      "noisy_path": "data/applications/APP-021/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "pan_number": "ZZVDE1021Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-022",
+      "document_type": "invoice",
+      "path": "data/applications/APP-022/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Ishaan Demo",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1200000,
+        "rto": 120000.0,
+        "insurance": 42000.00000000001,
+        "accessories": 24000.0,
+        "on_road_price": 1386000,
+        "requested_loan_amount": 1178000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-022",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-022/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Ishaan Demo",
+        "employer": "Example Mobility Services",
+        "gross_pay": 86000,
+        "deductions": 12900,
+        "net_pay": 73100,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-022",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-022/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-022/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Ishaan Demo",
+        "account_id": "SYNTH-AC-0022",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          81100,
+          81100,
+          81100
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-022",
+      "document_type": "insurance",
+      "path": "data/applications/APP-022/insurance.pdf",
+      "noisy_path": "data/applications/APP-022/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Ishaan Demo",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0022",
+        "idv": 1288980,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0022"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-022",
+      "document_type": "pan",
+      "path": "data/applications/APP-022/pan.pdf",
+      "noisy_path": "data/applications/APP-022/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Ishaan Demo",
+        "pan_number": "ZZWDE1022Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-023",
+      "document_type": "invoice",
+      "path": "data/applications/APP-023/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1400000,
+        "rto": 140000.0,
+        "insurance": 49000.00000000001,
+        "accessories": 28000.0,
+        "on_road_price": 1617000,
+        "requested_loan_amount": 1374000.0
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-023",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-023/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "employer": "Example Mobility Services",
+        "gross_pay": 93000,
+        "deductions": 13950,
+        "net_pay": 79050,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-023",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-023/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "account_id": "SYNTH-AC-0023",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          79050,
+          79050,
+          79050
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-023",
+      "document_type": "insurance",
+      "path": "data/applications/APP-023/insurance.pdf",
+      "noisy_path": "data/applications/APP-023/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0023",
+        "idv": 1503810,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0023"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-023",
+      "document_type": "pan",
+      "path": "data/applications/APP-023/pan.pdf",
+      "noisy_path": "data/applications/APP-023/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "pan_number": "ZZXDE1023Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-024",
+      "document_type": "invoice",
+      "path": "data/applications/APP-024/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "variant": "SX",
+        "ex_showroom_price": 1420000,
+        "rto": 142000.0,
+        "insurance": 49700.00000000001,
+        "accessories": 28400.0,
+        "on_road_price": 1640100,
+        "requested_loan_amount": 1394000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-024",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-024/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "employer": "Example Mobility Services",
+        "gross_pay": 96000,
+        "deductions": 14400,
+        "net_pay": 81600,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-024",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-024/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Reyansh Example",
+        "account_id": "SYNTH-AC-0024",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          81600,
+          81600,
+          81600
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-024",
+      "document_type": "insurance",
+      "path": "data/applications/APP-024/insurance.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0024",
+        "idv": 1525293,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Hyundai",
+        "vehicle_model": "Venue",
+        "registration": "XX00ZZ0024"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-024",
+      "document_type": "pan",
+      "path": "data/applications/APP-024/pan.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "pan_number": "ZZYDE1024Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-025",
+      "document_type": "invoice",
+      "path": "data/applications/APP-025/invoice.pdf",
+      "noisy_path": "data/applications/APP-025/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1280000,
+        "rto": 128000.0,
+        "insurance": 44800.00000000001,
+        "accessories": 25600.0,
+        "on_road_price": 1478400,
+        "requested_loan_amount": 1257000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch",
+        "insurance_idv_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-025",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-025/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-025/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "employer": "Example Mobility Services",
+        "gross_pay": 143000,
+        "deductions": 21450,
+        "net_pay": 121550,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-025",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-025/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-025/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "account_id": "SYNTH-AC-0025",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          130550,
+          130550,
+          130550
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-025",
+      "document_type": "insurance",
+      "path": "data/applications/APP-025/insurance.pdf",
+      "noisy_path": "data/applications/APP-025/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0025",
+        "idv": 1064448,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0025"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-025",
+      "document_type": "pan",
+      "path": "data/applications/APP-025/pan.pdf",
+      "noisy_path": "data/applications/APP-025/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Aarav Synthetic",
+        "pan_number": "ZZZDE1025Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-026",
+      "document_type": "invoice",
+      "path": "data/applications/APP-026/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1200000,
+        "rto": 120000.0,
+        "insurance": 42000.00000000001,
+        "accessories": 24000.0,
+        "on_road_price": 1386000,
+        "requested_loan_amount": 1178000.0
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-026",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-026/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "employer": "Example Mobility Services",
+        "gross_pay": 138000,
+        "deductions": 20700,
+        "net_pay": 117300,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-026",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-026/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-026/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "account_id": "SYNTH-AC-0026",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          117300,
+          117300,
+          117300
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-026",
+      "document_type": "insurance",
+      "path": "data/applications/APP-026/insurance.pdf",
+      "noisy_path": "data/applications/APP-026/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0026",
+        "idv": 1288980,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0026"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-026",
+      "document_type": "pan",
+      "path": "data/applications/APP-026/pan.pdf",
+      "noisy_path": "data/applications/APP-026/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "pan_number": "ZZADE1026Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-027",
+      "document_type": "invoice",
+      "path": "data/applications/APP-027/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 1540000,
+        "rto": 154000.0,
+        "insurance": 53900.00000000001,
+        "accessories": 30800.0,
+        "on_road_price": 1778700,
+        "requested_loan_amount": 1512000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-027",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-027/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "employer": "Example Mobility Services",
+        "gross_pay": 87000,
+        "deductions": 13050,
+        "net_pay": 73950,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-027",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-027/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Vivaan Dummy",
+        "account_id": "SYNTH-AC-0027",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          73950,
+          73950,
+          73950
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-027",
+      "document_type": "insurance",
+      "path": "data/applications/APP-027/insurance.pdf",
+      "noisy_path": "data/applications/APP-027/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0027",
+        "idv": 1654191,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0027"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-027",
+      "document_type": "pan",
+      "path": "data/applications/APP-027/pan.pdf",
+      "noisy_path": "data/applications/APP-027/insurance_noisy.png",
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "pan_number": "ZZBDE1027Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-028",
+      "document_type": "invoice",
+      "path": "data/applications/APP-028/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Tata Motors",
+        "vehicle_model": "Nexon",
+        "variant": "Fearless",
+        "ex_showroom_price": 970000,
+        "rto": 97000.0,
+        "insurance": 33950.0,
+        "accessories": 19400.0,
+        "on_road_price": 1120350,
+        "requested_loan_amount": 952000.0
+      },
+      "inconsistencies": [
+        "salary_credit_mismatch",
+        "expired_insurance"
+      ]
+    },
+    {
+      "application_id": "APP-028",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-028/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "employer": "Example Mobility Services",
+        "gross_pay": 129000,
+        "deductions": 19350,
+        "net_pay": 109650,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-028",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-028/bank_statement.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "account_id": "SYNTH-AC-0028",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          116650,
+          116650,
+          116650
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-028",
+      "document_type": "insurance",
+      "path": "data/applications/APP-028/insurance.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0028",
+        "idv": 1041926,
+        "start_date": "2026-01-01",
+        "end_date": "2025-06-01",
+        "vehicle_make": "Tata Motors",
+        "vehicle_model": "Nexon",
+        "registration": "XX00ZZ0028"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-028",
+      "document_type": "pan",
+      "path": "data/applications/APP-028/pan.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Diya Sample",
+        "pan_number": "ZZCDE1028Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-029",
+      "document_type": "invoice",
+      "path": "data/applications/APP-029/invoice.pdf",
+      "noisy_path": "data/applications/APP-029/invoice_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "variant": "ZXi",
+        "ex_showroom_price": 1550000,
+        "rto": 155000.0,
+        "insurance": 54250.00000000001,
+        "accessories": 31000.0,
+        "on_road_price": 1790250,
+        "requested_loan_amount": 1522000.0
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-029",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-029/salary_slip.pdf",
+      "noisy_path": "data/applications/APP-029/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "employer": "Example Mobility Services",
+        "gross_pay": 112000,
+        "deductions": 16800,
+        "net_pay": 95200,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-029",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-029/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-029/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "account_id": "SYNTH-AC-0029",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          95200,
+          95200,
+          95200
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-029",
+      "document_type": "insurance",
+      "path": "data/applications/APP-029/insurance.pdf",
+      "noisy_path": "data/applications/APP-029/salary_slip_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0029",
+        "idv": 1664932,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Maruti Suzuki",
+        "vehicle_model": "Brezza",
+        "registration": "XX00ZZ0029"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-029",
+      "document_type": "pan",
+      "path": "data/applications/APP-029/pan.pdf",
+      "noisy_path": "data/applications/APP-029/pan_noisy.png",
+      "fields": {
+        "applicant_name": "Saanvi Mock",
+        "pan_number": "ZZDDE1029Z"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-030",
+      "document_type": "invoice",
+      "path": "data/applications/APP-030/invoice.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "dealer_name": "Demo Motors India Pvt Ltd",
+        "gstin": "27ZZZDE1234Z1Z5",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "variant": "AX5",
+        "ex_showroom_price": 980000,
+        "rto": 98000.0,
+        "insurance": 34300.0,
+        "accessories": 19600.0,
+        "on_road_price": 1131900,
+        "requested_loan_amount": 962000.0
+      },
+      "inconsistencies": [
+        "applicant_name_mismatch",
+        "insurance_idv_mismatch"
+      ]
+    },
+    {
+      "application_id": "APP-030",
+      "document_type": "salary_slip",
+      "path": "data/applications/APP-030/salary_slip.pdf",
+      "noisy_path": null,
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "employer": "Example Mobility Services",
+        "gross_pay": 98000,
+        "deductions": 14700,
+        "net_pay": 83300,
+        "month": "2026-08"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-030",
+      "document_type": "bank_statement",
+      "path": "data/applications/APP-030/bank_statement.pdf",
+      "noisy_path": "data/applications/APP-030/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Meera Fiction",
+        "account_id": "SYNTH-AC-0030",
+        "period_start": "2026-06-01",
+        "period_end": "2026-08-31",
+        "salary_credits": [
+          83300,
+          83300,
+          83300
+        ],
+        "emi_debits": [
+          8500,
+          8500,
+          8500
+        ]
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-030",
+      "document_type": "insurance",
+      "path": "data/applications/APP-030/insurance.pdf",
+      "noisy_path": "data/applications/APP-030/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "insurer": "Sample General Insurance",
+        "policy_id": "SYNTH-POL-0030",
+        "idv": 814968,
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "vehicle_make": "Mahindra",
+        "vehicle_model": "XUV 3XO",
+        "registration": "XX00ZZ0030"
+      },
+      "inconsistencies": []
+    },
+    {
+      "application_id": "APP-030",
+      "document_type": "pan",
+      "path": "data/applications/APP-030/pan.pdf",
+      "noisy_path": "data/applications/APP-030/bank_statement_noisy.png",
+      "fields": {
+        "applicant_name": "Kabir Placeholder",
+        "pan_number": "ZZEDE1030Z"
+      },
+      "inconsistencies": []
+    }
+  ]
+}

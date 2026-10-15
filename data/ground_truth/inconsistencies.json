@@ -1,0 +1,175 @@
+[
+  {
+    "application_id": "APP-001",
+    "inconsistencies": [
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-002",
+    "inconsistencies": []
+  },
+  {
+    "application_id": "APP-003",
+    "inconsistencies": [
+      "applicant_name_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-004",
+    "inconsistencies": [
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-005",
+    "inconsistencies": [
+      "insurance_idv_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-006",
+    "inconsistencies": [
+      "applicant_name_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-007",
+    "inconsistencies": [
+      "expired_insurance",
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-008",
+    "inconsistencies": []
+  },
+  {
+    "application_id": "APP-009",
+    "inconsistencies": [
+      "applicant_name_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-010",
+    "inconsistencies": [
+      "insurance_idv_mismatch",
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-011",
+    "inconsistencies": []
+  },
+  {
+    "application_id": "APP-012",
+    "inconsistencies": [
+      "applicant_name_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-013",
+    "inconsistencies": [
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-014",
+    "inconsistencies": [
+      "expired_insurance"
+    ]
+  },
+  {
+    "application_id": "APP-015",
+    "inconsistencies": [
+      "applicant_name_mismatch",
+      "insurance_idv_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-016",
+    "inconsistencies": [
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-017",
+    "inconsistencies": []
+  },
+  {
+    "application_id": "APP-018",
+    "inconsistencies": [
+      "applicant_name_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-019",
+    "inconsistencies": [
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-020",
+    "inconsistencies": [
+      "insurance_idv_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-021",
+    "inconsistencies": [
+      "applicant_name_mismatch",
+      "expired_insurance"
+    ]
+  },
+  {
+    "application_id": "APP-022",
+    "inconsistencies": [
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-023",
+    "inconsistencies": []
+  },
+  {
+    "application_id": "APP-024",
+    "inconsistencies": [
+      "applicant_name_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-025",
+    "inconsistencies": [
+      "insurance_idv_mismatch",
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-026",
+    "inconsistencies": []
+  },
+  {
+    "application_id": "APP-027",
+    "inconsistencies": [
+      "applicant_name_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-028",
+    "inconsistencies": [
+      "expired_insurance",
+      "salary_credit_mismatch"
+    ]
+  },
+  {
+    "application_id": "APP-029",
+    "inconsistencies": []
+  },
+  {
+    "application_id": "APP-030",
+    "inconsistencies": [
+      "applicant_name_mismatch",
+      "insurance_idv_mismatch"
+    ]
+  }
+]
