@@ -1,0 +1,7 @@
+# PRODUCT DECISION: Kanishk to justify
+name_match_threshold: 85
+ltv_cap: 0.90
+foir_cap: 0.50
+idv_tolerance_pct: 0.20
+salary_credit_tolerance_pct: 0.05
+low_confidence_threshold: 0.70

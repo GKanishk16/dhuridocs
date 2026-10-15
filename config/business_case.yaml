@@ -1,0 +1,4 @@
+# All values below are placeholders, not measured facts.
+manual_minutes_per_application: 45 # ASSUMPTION: Kanishk to source/validate
+loan_officer_cost_per_hour_inr: 300 # ASSUMPTION: Kanishk to source/validate
+monthly_application_volume: 1000 # ASSUMPTION: Kanishk to source/validate
