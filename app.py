@@ -47,7 +47,7 @@ with tabs[1]:
     report=Path("reports/evaluation_report.md")
     st.markdown(report.read_text() if report.exists() else "Generate the corpus and run `python -m src.evaluation.run`.")
     metrics=Path("reports/metrics.csv")
-    if metrics.exists(): st.dataframe(__import__("pandas").read_csv(metrics),use_container_width=True)
+    if metrics.exists(): st.dataframe(__import__("pandas").read_csv(metrics))
 with tabs[2]:
     import yaml
     bc=yaml.safe_load(Path("config/business_case.yaml").read_text())
