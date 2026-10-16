@@ -8,6 +8,19 @@ from .schemas import SCHEMAS
 
 log = logging.getLogger(__name__)
 
+def _setting(name: str, default: str | None = None) -> str | None:
+    """Read configuration from environment/.env, with Streamlit Secrets fallback."""
+    value = os.getenv(name)
+    if value:
+        return value
+    try:
+        import streamlit as st
+        value = st.secrets.get(name)
+        return str(value) if value is not None else default
+    except Exception:
+        # Streamlit may be absent in library/test contexts or have no secrets file.
+        return default
+
 def _image_data(path: Path) -> tuple[list[str], str]:
     suffix = path.suffix.lower()
     if suffix == ".pdf":
@@ -23,7 +36,7 @@ def _image_data(path: Path) -> tuple[list[str], str]:
 
 def _call_model(path: Path, doc_type: str, repair: str = "") -> dict:
     load_dotenv()
-    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    provider = (_setting("LLM_PROVIDER", "openai") or "openai").lower()
     schema = SCHEMAS[doc_type]
     payloads, kind = _image_data(path)
     prompt = (f"Extract only facts visible in this {doc_type} document. Return JSON matching this schema: "
@@ -31,13 +44,13 @@ def _call_model(path: Path, doc_type: str, repair: str = "") -> dict:
               "Never infer missing values; use null with confidence 0. " + repair)
     if provider == "anthropic":
         import anthropic
-        client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+        client = anthropic.Anthropic(api_key=_setting("ANTHROPIC_API_KEY"))
         content = [{"type":"text", "text":prompt}]
         if kind in {"png", "jpg", "jpeg", "webp", "image"}:
             media_type="image/jpeg" if path.suffix.lower() in {".jpg", ".jpeg"} else "image/png"
             content[0:0]=[{"type":"image","source":{"type":"base64","media_type":media_type,"data":payload}} for payload in payloads]
         else: content[0:0]=[{"type":"text","text":"Document text:\n"+payloads[0]}]
-        response = client.messages.create(model=os.getenv("ANTHROPIC_MODEL","claude-3-5-sonnet-latest"), max_tokens=2500, messages=[{"role":"user","content":content}])
+        response = client.messages.create(model=_setting("ANTHROPIC_MODEL","claude-3-5-sonnet-latest"), max_tokens=2500, messages=[{"role":"user","content":content}])
         text = response.content[0].text
     else:
         from openai import OpenAI
@@ -46,7 +59,7 @@ def _call_model(path: Path, doc_type: str, repair: str = "") -> dict:
             media_type="jpeg" if path.suffix.lower() in {".jpg", ".jpeg"} else "png"
             content[0:0]=[{"type":"image_url","image_url":{"url":f"data:image/{media_type};base64,{payload}"}} for payload in payloads]
         else: content[0:0]=[{"type":"text","text":"Document text:\n"+payloads[0]}]
-        response = OpenAI().chat.completions.create(model=os.getenv("OPENAI_MODEL","gpt-4o-mini"), messages=[{"role":"user","content":content}], response_format={"type":"json_object"})
+        response = OpenAI(api_key=_setting("OPENAI_API_KEY")).chat.completions.create(model=_setting("OPENAI_MODEL","gpt-4o-mini"), messages=[{"role":"user","content":content}], response_format={"type":"json_object"})
         text = response.choices[0].message.content
     return json.loads(text)
 

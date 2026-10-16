@@ -45,6 +45,16 @@ streamlit run app.py
 pytest
 ```
 
+## Deploy to Streamlit Community Cloud
+
+Create a new app from `GKanishk16/dhuridocs`, branch `main`, entrypoint `app.py`.
+The evaluation and business-case tabs work without provider credentials. To use
+document extraction in the hosted app, add `OPENAI_API_KEY` under the app's
+**Settings → Secrets** (or configure `LLM_PROVIDER = "anthropic"` and
+`ANTHROPIC_API_KEY`). The pipeline reads Streamlit Secrets as well as local
+environment variables. Keep credentials out of the repository. Uploads are
+processed by the configured provider; use synthetic documents for this demo.
+
 The default evaluation command inventories the corpus and intentionally reports that model accuracy, inconsistency detection, latency, cost, and worst failures have not been measured. Run actual extraction with provider credentials before making performance claims. Noisy PNG variants sit alongside clean PDFs in each application directory.
 
 ## Evaluation status
